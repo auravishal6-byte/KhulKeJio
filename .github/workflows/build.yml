@@ -32,7 +32,7 @@ jobs:
     - name: Build Debug APK with Gradle
       run: |
         cd android
-        gradle assembleDebug
+        gradle assembleDebug --stacktrace
 
     - name: Verify APK Output Path
       run: |
